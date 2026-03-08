@@ -1,0 +1,17 @@
+.card {
+  background-color: #fff;
+  padding: 2.15rem;
+  border-radius: 40px;
+  color: black;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .imageBlock {
+      width: 222px;
+      height: 218px;
+      background-color: red;
+    }
+  }
+}
