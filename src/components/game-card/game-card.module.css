@@ -1,17 +1,52 @@
 .card {
   background-color: #fff;
   padding: 2.15rem;
-  border-radius: 40px;
+  border-radius: 30px;
   color: black;
+  min-width: 280px;
+
   .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
     .imageBlock {
-      width: 222px;
-      height: 218px;
-      background-color: red;
+      background-color: #f8981d;
+      min-width: 242px;
+      width: 100%;
+      border-radius: 9px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      aspect-ratio: 9/12;
+    }
+
+    .price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      letter-spacing: 0;
+    }
+
+    .newPrice {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      color: #ff007f;
+    }
+
+    .oldPrice {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      color: #adcced;
+      text-decoration: line-through;
     }
   }
+}
+
+img {
+  width: 100%;
+  display: block;
 }
