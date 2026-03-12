@@ -1,0 +1,43 @@
+.footer {
+  max-width: 1240px;
+  border-top: 3px solid #e65425;
+  padding: 25px 40px;
+  margin-top: 40px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .links {
+      display: flex;
+      align-items: center;
+
+      .link {
+        padding: 0 20px;
+        font-size: 1.16rem;
+        font-weight: 700;
+        line-height: 16px;
+        color: #ffffff;
+        transition: color 0.3s ease;
+
+        &:first-child {
+          border-right: 1px solid #ffffff;
+        }
+
+        &:last-child {
+          border-left: 1px solid #ffffff;
+        }
+
+        &:hover {
+          color: #e65425;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
