@@ -1,16 +1,26 @@
 import "./App.css";
-import { GameCard } from "./components/game-card/game-card";
-import data from "./mock/data.json";
+import { Header } from "./components/header/header";
+import { MainBackground } from "./components/main-background/main-background";
+import { HeroSection } from "./components/hero-section/hero-section";
+import { CardsShowcase } from "./components/cards-showcase/cards-showcase";
+import { cardData } from "./mock/data";
+import { StepsSection } from "./components/steps-section/steps-section";
+import { DeliverySection } from "./components/delivery-section/delivery-section";
+import { Footer } from "./components/footer/footer";
 
 function App() {
   return (
-    <GameCard
-      id={data.id}
-      img={data.img}
-      title={data.title}
-      price={data.price}
-      oldPrice={data.oldPrice}
-    />
+    <>
+      <Header />
+      <main>
+        <MainBackground />
+        <HeroSection />
+        <CardsShowcase data={cardData} />
+        <StepsSection />
+        <DeliverySection />
+      </main>
+      <Footer />
+    </>
   );
 }
 
