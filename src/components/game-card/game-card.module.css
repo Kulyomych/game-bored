@@ -1,52 +1,57 @@
 .card {
-  background-color: #fff;
-  padding: 2.15rem;
+  max-width: 280px;
+  background-color: #ffffff;
+  padding: 20px 20px 30px 20px;
   border-radius: 30px;
   color: black;
-  min-width: 280px;
 
   .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
-    .imageBlock {
-      background-color: #f8981d;
-      min-width: 242px;
-      width: 100%;
-      border-radius: 9px;
-      overflow: hidden;
+    .image {
       display: grid;
       place-items: center;
-      aspect-ratio: 9/12;
+      width: 100%;
+      min-width: 240px;
+      aspect-ratio: 0.9/1;
+      background-color: #f8981d;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
     }
 
-    .price {
+    .info {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      letter-spacing: 0;
-    }
+      flex-direction: column;
+      gap: 10px;
 
-    .newPrice {
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 30px;
-      color: #ff007f;
-    }
+      .prices {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
 
-    .oldPrice {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 19.6px;
-      color: #adcced;
-      text-decoration: line-through;
+        .oldPrice {
+          font-size: 1rem;
+          letter-spacing: 0px;
+          font-weight: 400;
+          line-height: 20px;
+          text-decoration: line-through;
+          color: #adcced;
+        }
+
+        .newPrice {
+          font-size: 1.5rem;
+          letter-spacing: 0px;
+          font-weight: 600;
+          line-height: 30px;
+          color: #ff007f;
+        }
+      }
     }
   }
-}
-
-img {
-  width: 100%;
-  display: block;
 }
