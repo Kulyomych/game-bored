@@ -1,6 +1,59 @@
+html {
+  font-size: 14px;
+  background-color: #2a2a2a;
+}
+
 #root {
   max-width: 1280px;
+  min-height: 100vh;
+  background-color: #322f37;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main > *:not(:first-child) {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
