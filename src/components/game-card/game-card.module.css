@@ -25,11 +25,13 @@
     }
 
     .info {
+      font-family: "Manrope", Helvetica, sans-serif;
       display: flex;
       flex-direction: column;
       gap: 10px;
 
       .prices {
+        font-family: "Manrope", Helvetica, sans-serif;
         display: inline-flex;
         justify-content: center;
         align-items: center;
