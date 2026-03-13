@@ -12,49 +12,63 @@
 }
 
 .icon01 {
-  width: 190px;
-  top: 20px;
-  left: -90px;
+  width: 248px;
+  height: 257px;
+  top: 1600px;
+  left: 190px;
+}
+.icon02 {
+  width: 283px;
+  height: 260px;
+  top: 1600px;
+  left: 742px;
+  transform: translateX(41deg);
 }
 
 .icon03 {
-  width: 130px;
-  top: 260px;
-  right: -40px;
+  width: 413px;
+  height: 395px;
+  top: 510px;
+  left: 845px;
+  transform: transform(-180deg);
 }
 
 .icon04 {
-  width: 160px;
-  top: 760px;
-  left: -70px;
+  width: 400px;
+  height: 376px;
+  top: 736px;
+  left: 20px;
 }
 
 .icon05 {
-  width: 220px;
-  top: 520px;
-  right: -110px;
+  width: 92px;
+  height: 98px;
+  top: 1600px;
+  left: 971px;
 }
 
 .icon06 {
-  width: 170px;
-  top: 1180px;
-  left: -60px;
+  width: 73px;
+  height: 76px;
+  top: 1800px;
+  left: 944px;
 }
 
 .icon07 {
-  width: 200px;
-  top: 1480px;
-  right: -90px;
+  width: 103px;
+  height: 104px;
+  top: 1550px;
+  left: 262px;
 }
 
 .icon08 {
-  width: 150px;
-  top: 180px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 89px;
+  height: 90px;
+  top: 1800px;
+  left: 135px;
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .icon01,
   .icon04,
   .icon06 {
@@ -100,4 +114,4 @@
     width: 100px;
     top: 1750px;
   }
-}
+}*/
