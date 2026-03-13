@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# GameBored
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
 
-Currently, two official plugins are available:
+Первая страница сайта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Реализована первая страница сайта кастомизации настольных игр.
+Карточки игр отображаются из массива данных, при клике карточка становится выбранной и визуально выделяется.
 
-## React Compiler
+Проект реализован с использованием **React + TypeScript** и разбит на переиспользуемые компоненты.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Функциональность
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Страница разбита на компоненты
+- Карточки игр отрисовываются через `map` из массива данных
+- При клике карточка игры становится выбранной
+- Выбранная игра хранится в `state`
+- Выбранная карточка визуально выделяется
+- Используется **TypeScript без `any`**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Стек технологий
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- CSS
+
+---
+
+## Структура проекта
+
+```
+public/
+  images/        # PNG изображения игр
+
+src/
+  components/    # React компоненты
+  assets/        # шрифты и svg изображения
+  mock/          # моковые данные
+  types/         # TypeScript типы
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Установка и запуск проекта
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Клонировать репозиторий
+
+```bash
+git clone https://github.com/Kulyomych/game-bored
 ```
+
+### 2. Перейти в папку проекта
+
+```bash
+cd game-bored
+```
+
+### 3. Установить зависимости
+
+```bash
+npm install
+```
+
+### 4. Запустить проект
+
+```bash
+npm run dev
+```
+
+После запуска приложение будет доступно по адресу:
+
+```
+http://localhost:5173
+```
+
+---
