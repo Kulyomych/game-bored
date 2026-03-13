@@ -14,6 +14,7 @@
       align-items: center;
 
       .link {
+        font-family: "Manrope", Helvetica, sans-serif;
         padding: 0 20px;
         font-size: 1.16rem;
         font-weight: 700;
