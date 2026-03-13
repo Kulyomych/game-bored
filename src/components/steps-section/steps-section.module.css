@@ -1,6 +1,7 @@
 .section {
   max-width: 1240px;
   padding: 30px 90px;
+  margin-bottom: 110px;
 
   .container {
     display: flex;
